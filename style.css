@@ -1,67 +1,58 @@
 body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    background-color: rgb(0, 0, 0);
-}
-/* Navbar */
-.logo ul{
-    text-align: center;
+padding:0;
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+background-color: black;
+margin-top: -15px;
+justify-content: center;
 }
 
-.logo ul li{
+.header ul li{
     flex-flow: wrap;
     display: inline-block;
-    margin: 15px;
     text-justify: auto;
-}
-.logo ul li a{
-    text-decoration: none;
-    background-color: rgb(0, 0, 0);
-    background-position: fixed;
-    color: darkgrey;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    margin-left: 10px;
-    
-}
-.logo{
-    background-color: rgb(0, 0, 0);
-}
-.picture{
-   width:100%;
-   height: 100%;
-   justify-content: center;
-}
-.logo :hover{
-color: white;
+    margin: 15px;
 }
 
-/* RUBICON */
-
-.titleIp{
+.header ul{
     text-align: center;
-    line-height: 20px;
 }
 
-.mainheader .titleIp h1{
-   font-variant: small-caps; 
+.header ul li a{
+    text-decoration: none;
+    background-color: rgb(20,20,20);
+    background-position: fixed;
+    color: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+
+}
+
+.header{
+    background-color: rgb(20,20,20);
+}
+
+.picture{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.header :hover{
+    color: white;
+}
+
+/* BAGIAN IPHONE 15 PROMEK */
+.main .jumbotron .mainheader .titleIp, .link h1, h3, p, a{
+        text-align: center;
+        line-height: 20px;
 }
 
 p{
-    color: rgb(255, 221, 86);
+    color: grey;
     font-size: 20px;
     line-height: 20px;
-}
-
-.main .jumbotron .mainheader{
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(255, 166, 78);
-    align-items: center;
-    height: 600px;
-    color: rgb(255, 255, 255);
 }
 
 .main .jumbotron .mainheader .img{
@@ -69,19 +60,31 @@ p{
     cursor: pointer;
 }
 
-.main .image img{
-    transition: transform 0.6s;
+.main .mainheader .image img{
+    transition: transform 0.4s;
+
 }
 
-.main .image img:hover{
+.main .mainheader .image img:hover{
     transform: rotateZ(360deg);
 
-
 }
 
-/*IPHONE 15 PRO*/
+.main .jumbotron .mainheader{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    background-image: url(iphone-15-pro.png);
+    background-repeat: no-repeat; 
+    /* background-size: cover; */
+    align-items: center;
+    height: 500px;
+    color: white;
+}
+
+/* MACKBOOK EDITING */
 .main .banner{
-    background-image: url('iphone-15N.jpg');
+    background-image: url('macbook.webp');
     height: 700px;
     background-repeat: no-repeat;
     background-position: center;
@@ -100,15 +103,11 @@ p{
 
 .main .banner .container h1{
     font-size: 50px;
-    font-weight: 700;
-}
-
-.main .banner .container p{
-    color: gray;
+    font-weight: 700px;
 }
 
 .main, .banner, .container{
-    font-size: 25px;
+    font-size: 26px;
     font-weight: 60;
 }
 
@@ -126,71 +125,33 @@ a{
     color: inherit;
 }
 
-
-/* IWATCH & IPAD */
+/* VR DAN IPAD */
 .main .banner2{
-    background-color: rgb(255, 166, 78);
-    background-size: cover;
+    background-color: white;
     height: 500;
-    background-repeat: no-repeat;
-    background-position: center;
     display: flex;
     justify-content: center;
-    
-
 }
 
-.banner2 .container2, .container3{
+.banner2 .container2 .container3{
     margin-bottom: 50px;
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    justify-content: space-around;
     display: inline-block;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .container2{
     text-align: center;
-    justify-content: center;
-    line-height: 35px;
-}
-
-.title{
-    color: black;
-    margin-top: -29px;
-    line-height: 35px;
 }
 
 .container3{
+    text-indent: 200px;
     text-align: center;
-    text-indent: 50px;
     justify-content: right;
-}
-
-.link2 a{
-    padding: 15px;
-    text-decoration: none;
-    color: rgb(56, 143, 255)
-}
-
-.link2 a:hover{
-    text-decoration: underline;
-}
-
-.image2 img{
-    transition: transform 0.6s;
-
-}
-
-.image2 img:hover{
-    transform: rotateZ(360deg);
-
 }
 
 /* FOOTER */
 .footer{
-    background-color: rgb(255, 178, 100);
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     height: 300px;
     display: flex;
@@ -212,10 +173,11 @@ a{
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: 100;
-    text-align: left;
+    text-align: center;
 }
 
 .footer h3{
     margin-bottom: -5px;
     font-weight: bold;
 }
+
